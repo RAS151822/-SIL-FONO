@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonDo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_red_dark"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Do"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="RE"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDo" />
+
+    <Button
+        android:id="@+id/buttonMI"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="MI"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRE" />
+
+    <Button
+        android:id="@+id/buttonFA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_green_light"
+        android:text="FA "
+        app:layout_constraintBottom_toTopOf="@+id/buttonSOL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMI" />
+
+    <Button
+        android:id="@+id/buttonSOL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="SOL"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFA" />
+
+    <Button
+        android:id="@+id/buttonLA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="LA"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSOL" />
+
+    <Button
+        android:id="@+id/buttonSI"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_purple"
+        android:text="SI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLA" />
+</androidx.constraintlayout.widget.ConstraintLayout>
